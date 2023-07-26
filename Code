@@ -1,0 +1,87 @@
+print("Enter 1 for Harry, 2 for Rohan, and 3 for Hammad: ")
+person = int(input())
+
+print("Enter 'd' for diet and 'e' for exercise: ")
+choice1 = input()
+
+print("Enter 'r' to read and 'w' to write: ")
+choice2 = input()
+
+def getdate():
+    import datetime
+    return datetime.datetime.now()
+
+if person == 1:
+    if choice1 == 'd':
+        if choice2 == 'r':
+            f = open("HarryDiet.txt")
+            content = f.read()
+            print(content)
+        if choice2 == 'w':
+            f = open("HarryDiet.txt", "w")
+            f.write("\t\t\t\t\t\t\t\t\t************* HARRY'S DIET *************\n\n")
+            f.write("Date: ")
+            f.write(str(getdate()))
+            f.write("\n\nBreakfast: Bread\nLunch: Roti\nDinner: Burger")
+
+    if choice1 == 'e':
+        if choice2 == 'r':
+            f = open("HarryExercise.txt")
+            content = f.read()
+            print(content)
+        if choice2 == 'w':
+            f = open("HarryExercise.txt", "w")
+            f.write("\t\t\t\t\t\t\t\t\t************* HARRY'S EXERCISE *************\n\n")
+            f.write("Date: ")
+            f.write(str(getdate()))
+            f.write("\n\n20 Jumping Jacks")
+
+if person == 2:
+    if choice1 == 'd':
+        if choice2 == 'r':
+            f = open("RohanDiet.txt")
+            content = f.read()
+            print(content)
+        if choice2 == 'w':
+            f = open("RohanDiet.txt", "w")
+            f.write("\t\t\t\t\t\t\t\t\t************* ROHAN'S DIET *************\n\n")
+            f.write("Date: ")
+            f.write(str(getdate()))
+            f.write("\n\nBreakfast: Chaawal\nLunch: Boti\nDinner: Shake")
+
+    if choice1 == 'e':
+        if choice2 == 'r':
+            f = open("RohanExercise.txt")
+            content = f.read()
+            print(content)
+        if choice2 == 'w':
+            f = open("RohanExercise.txt", "w")
+            f.write("\t\t\t\t\t\t\t\t\t************* ROHAN'S EXERCISE *************\n\n")
+            f.write("Date: ")
+            f.write(str(getdate()))
+            f.write("\n\nPushups")
+
+if person == 3:
+    if choice1 == 'd':
+        if choice2 == 'r':
+            f = open("HammadDiet.txt")
+            content = f.read()
+            print(content)
+        if choice2 == 'w':
+            f = open("HammadDiet.txt", "w")
+            f.write("\t\t\t\t\t\t\t\t\t************* HAMMAD'S DIET *************\n\n")
+            f.write("Date: ")
+            f.write(str(getdate()))
+            f.write("\n\nBreakfast: Milk\nLunch: Paratha\nDinner: Pizza")
+
+    if choice1 == 'e':
+        if choice2 == 'r':
+            f = open("HammadExercise.txt")
+            content = f.read()
+            print(content)
+        if choice2 == 'w':
+            f = open("HammadExercise.txt", "w")
+            f.write("\t\t\t\t\t\t\t\t\t************* HAMMAD'S EXERCISE *************\n\n")
+            f.write("Date: ")
+            f.write(str(getdate()))
+            f.write("\n\nCardio")
